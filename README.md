@@ -40,7 +40,9 @@ intentional front solder-mask openings. The KF1950 ASICs are not sold by distrib
 
 ## License
 
-This project is licensed under the CERN-OHL-S-2.0 licence. See [LICENSE](LICENSE).
+This project is licensed under the
+[CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S-2.0)](https://choosealicense.com/licenses/cern-ohl-s-2.0/).
+See [LICENSE](LICENSE) for the full text.
 
 ## Acknowledgments
 
