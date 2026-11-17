@@ -35,7 +35,7 @@
     (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 06182f8d-cd4e-437e-b9ab-1c088c5999a0))
   (pad "1" smd rect (at -1.5 0) (size 1.6 2.7) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e4b6d801-b8c5-4289-9214-d85fea90a1b9))
   (pad "2" smd rect (at 1.5 0) (size 1.6 2.7) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 111f88ee-2f7c-4767-932f-1b6fadb16825))
-  (model "${KIPRJMOD}/3D/2R5TPE220MAFB.step"
+  (model "${KIPRJMOD}/3d/2R5TPE220MAFB.step"
     (offset (xyz 0 -13.75 -1.65))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 90))

@@ -1,0 +1,89 @@
+BitaxeNini V1.0 - PCB FABRICATION AND ASSEMBLY NOTES
+====================================================
+Generated 2026-11-17 from BitaxeNini_V1.0.kicad_pcb (KiCad 10.0.7).
+If anything in the Gerber job file or drawings conflicts with these notes, these notes take precedence.
+
+
+1. PCB FABRICATION
+------------------
+Board size          65.1 x 112.1 mm (outline: BitaxeNini_V1.0-Edge_Cuts.gm1)
+Layers              4
+Thickness           1.6 mm finished, FR-4, high-Tg (Tg >= 170 C recommended - high-current, hot board)
+Copper              2 oz (70 um) OUTER layers (F.Cu, B.Cu), 1 oz (35 um) INNER layers (In1.Cu, In2.Cu)
+Layer order         L1 F.Cu (top) / L2 In1.Cu / L3 In2.Cu / L4 B.Cu (bottom)
+Stackup             Fab standard 4-layer 1.6 mm stackup is fine; no impedance control required
+Surface finish      ENIG (required - large exposed copper areas under the heatsink, see 3)
+Solder mask         Both sides, green (or any colour), LPI
+Silkscreen          Both sides, white
+Min track / space   0.20 mm / 0.20 mm
+Min drill           0.30 mm (vias 0.3 mm drill / 0.6 mm pad, some 0.5 mm pad)
+Plated holes        936 (see BitaxeNini_V1.0-PTH.drl, includes 4 plated slots)
+Non-plated holes    7 (see BitaxeNini_V1.0-NPTH.drl - 2 x 3.2 mm are heatsink mounting holes)
+Drill files         Excellon, metric, absolute origin, separate PTH / NPTH; drill maps included (PDF)
+Castellations / V-score / impedance: none
+
+
+2. VIA-IN-PAD - FILLED AND CAPPED (REQUIRED)
+--------------------------------------------
+- U8-U11 (KF1950 ASICs, 51 vias each) and U2 (TPS546 thermal pad, 15 vias) have vias inside SMD pads:
+  0.3 mm drill / 0.6 mm pad, epoxy filled, copper capped and planarised (IPC-4761 Type VII).
+- Filling and capping ALL 0.3 mm vias on the board (POFV) is acceptable and preferred if it simplifies processing.
+
+
+3. INTENTIONAL SOLDER MASK OPENINGS - DO NOT "FIX"
+--------------------------------------------------
+- FRONT (top) side: the solder mask is deliberately removed over the large copper pours under the
+  flat heatsink area (approx. 60 x 44 mm centred on the ASICs), INCLUDING over via caps and the area
+  opposite each ASIC. Bare copper there is intentional (ENIG finish). Do not add mask or tenting.
+- BOTTOM side: mask opening 3.3 x 5.3 mm under U2 (exposed GND pad for a stick-on heatsink).
+- Silkscreen that falls inside a mask opening may be clipped by the fab - this is acceptable.
+
+
+4. OTHER NOTES FOR THE FAB
+--------------------------
+- J1 and J9 footprints overlap and share the same two holes on purpose (alternative power connectors).
+  Only J1 is populated.
+- The Gerber job file (.gbrjob) stackup matches these notes (ENIG, 70 um outer / 35 um inner copper).
+
+
+5. ASSEMBLY (PCBA)
+------------------
+- Double-sided SMT. TOP: TPS546 (U2), power stage, input/output capacitors, U1, J5.
+  BOTTOM: the four KF1950 ASICs (U8-U11), ESP32-S3 module (U4), support parts.
+- Through-hole: J1 (terminal block), J7, J8 (4-pin headers).
+- BOM: BitaxeNini_V1.0_BOM.csv (manufacturer and DigiKey part numbers).
+  Placement: BitaxeNini_V1.0-all-pos.csv (mm, KiCad origin, both sides; DNP parts excluded).
+- KF1950 ASICs (U8-U11) are customer supplied (consigned) - not available from distributors.
+- Do Not Populate: R12, R38, R43, R46, C14, C50 (alternate / option positions) and all test points.
+- Test points (0.9V1, CLK2, CTSI1, RST_OUT1, RXD_OUT1, TPx, CLK1, RST_DET1) are bare pads - no part.
+- Fiducials: FID1-FID3.
+
+
+6. HAND ASSEMBLY AFTER PCBA (NOT IN THE PCBA BOM)
+------------------------------------------------
+- J4: 0.91" 128x32 SSD1306 I2C OLED module on a 1x4 2.54 mm header (bottom side, top-left corner).
+  The module sits at the top of the header pins; it must clear the ESP32 module.
+- HS1 ridged heatsink (68 x 68 mm M30 hashboard cut-off) on the BOTTOM side, ridges on the ASICs,
+  with thermal interface material on the ASIC tops.
+- Flat finned heatsink (60 x 44 x 44 mm) on the TOP side over the ASIC area, on ELECTRICALLY INSULATING
+  thermal tape (the exposed copper pours are at different potentials).
+- 12 x 12 x 5 mm heatsink on U2's bottom-side pad, on insulating thermal tape, centred at the U2 heatsink
+  outline on B.Fab (must not touch the ridged heatsink).
+- 2 x M3 screws through the heatsink holes (non-plated).
+
+
+7. FILE LIST
+------------
+gerbers/BitaxeNini_V1.0-F_Cu.gtl, -In1_Cu.g1, -In2_Cu.g2, -B_Cu.gbl         copper
+gerbers/BitaxeNini_V1.0-F_Mask.gts, -B_Mask.gbs                               solder mask
+gerbers/BitaxeNini_V1.0-F_Silkscreen.gto, -B_Silkscreen.gbo                   legend
+gerbers/BitaxeNini_V1.0-F_Paste.gtp, -B_Paste.gbp                             paste (stencil)
+gerbers/BitaxeNini_V1.0-Edge_Cuts.gm1                                         outline
+gerbers/BitaxeNini_V1.0-PTH.drl, -NPTH.drl (+ drill map PDFs, drill report)   drills
+gerbers/BitaxeNini_V1.0-job.gbrjob                                            Gerber X2 job file
+BitaxeNini_V1.0_MFG_261117.zip                                                gerbers + drills (upload this)
+BitaxeNini_V1.0_BOM.csv                                                       BOM
+BitaxeNini_V1.0-all-pos.csv, gerbers/BitaxeNini_V1.0-all.pos                  pick and place
+BitaxeNini_V1.0-fab_drawing.pdf                                               outline, fab note, front mask
+BitaxeNini_V1.0-assembly_top.pdf / _bottom.pdf                                assembly drawings
+FAB_NOTES.txt                                                                 this file

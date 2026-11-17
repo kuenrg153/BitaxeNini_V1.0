@@ -1,0 +1,34 @@
+(version 1)
+
+# --- BitaxeNini V1.0 custom rules -------------------------------------------
+# Net classes (in the .kicad_pro) set widths/vias; these rules add the extras.
+
+# 1.2 V stack: each stack net is a different 0.3 V domain. Pours/tracks of one
+# domain keep 0.3 mm from another domain (pads inside the KF1950 are 0.247 mm
+# apart by design, so pad-to-pad is left to the 0.2 mm net-class clearance).
+(rule "core domain pours"
+	(condition "A.NetClass == 'CORE_30A' && A.Type != 'Pad' && B.NetClass == 'CORE_30A' && B.Net != A.Net")
+	(constraint clearance (min 0.3mm)))
+
+# Power vias in the 30 A stack: not smaller than 0.6 / 0.3 mm.
+(rule "core via size"
+	(condition "A.Type == 'Via' && A.NetClass == 'CORE_30A'")
+	(constraint hole_size (min 0.3mm))
+	(constraint via_diameter (min 0.6mm)))
+
+# Switch-node copper (tracks / zones) keeps 0.3 mm from other nets.
+# (TPS546 SW-to-BOOT pads are 0.25 mm apart in the footprint.)
+(rule "sw node copper"
+	(condition "A.NetClass == 'SW_NODE' && A.Type != 'Pad' && B.Net != A.Net")
+	(constraint clearance (min 0.3mm)))
+
+# Diff pairs: KiCad only pairs nets whose names end in P/N or +/-.
+# The sense / temp-diode nets don't yet (e.g. Net-(U17-IN+) ends in ')'),
+# so they are routed as pairs by hand using the SENSE_PAIR net class.
+# USB is full-speed (12 Mb/s): route D+/D- with the diff-pair router
+# (USB net class 0.2 / 0.15); no length/skew rule needed.
+
+# U1 (TPSM86x RDX package): pads are 0.18 mm apart by design.
+(rule "U1 fine-pitch pads"
+	(condition "A.memberOfFootprint('U1')")
+	(constraint clearance (min 0.17mm)))

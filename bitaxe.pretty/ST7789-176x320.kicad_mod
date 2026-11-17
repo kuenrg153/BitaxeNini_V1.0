@@ -97,7 +97,7 @@
   (pad "10" smd rect (at -2.51138 -3.389399 180) (size 0.35 3) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 84b4c0b1-fdf0-4f98-b1a7-567fd6286b2c))
   (pad "11" smd rect (at -3.21138 -3.389399 180) (size 0.35 3) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e11d01f6-ddd2-4623-89e5-e7818f21b377))
   (pad "12" smd rect (at -3.91138 -3.389399 180) (size 0.35 3) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 1d2c0c5d-1e5b-46e7-aad6-04a784765929))
-  (model "C:/Users/ccadic/CloudStation/ips1.47 ST7789 176 320/DISST7789-176x320.STEP"
+  (model "${KIPRJMOD}/3d/DISST7789-176x320.STEP"
     (offset (xyz -24.5 30.75 1.5))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

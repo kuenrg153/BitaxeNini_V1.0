@@ -1,59 +1,49 @@
-# Bitaxe Gamma Turbo
+# Bitaxe Nini V1.0
 
-Bitaxe Gamma Turbo is a dual BM1370 Open Source Bitcoin miner using [esp-miner](https://github.com/bitaxeorg/esp-miner). This project aims to provide a high-performance, energy-efficient Bitcoin mining solution using modern ASIC hardware.
+Bitaxe Nini is an open-source Bitcoin miner board with **four KF1950 ASICs**. It is a derivative of the
+[Bitaxe Gamma Turbo (BitaxeGT)](https://github.com/bitaxeorg/BitaxeGT) and is designed in KiCad 10.
 
-<img src="doc/render.png" width="400" />
-
-## Table of Contents
-
-- [Version](#version)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-
-## Version
-
-The first release of the Bitaxe Gamma Turbo (GT) marks the version 801.
-
-Major improvements over the version 800xxx are changes in the selected components and refitting components and headers on the PCB.
+<img src="doc/render.png" width="480" /> <img src="doc/render_bottom.png" width="480" />
 
 ## Features
 
-- Dual BM1370 ASIC
-- Dual TPS546*
-- Improved Mounting Hole selection
-- 12V BAP
-- EMC2103
+- 4 x KF1950 ASICs on the bottom side, cooled by a ridged 68 x 68 mm heatsink
+- TPS546D24S buck regulator for the ASIC core supply
+- ESP32-S3-WROOM-1 controller with USB-C
+- 12 V input (screw terminal J1, with an alternate J9 position)
+- EMC2101 and EMC2103-2 fan control and temperature monitoring
+- 0.91" 128 x 32 I2C OLED module (J4)
+- Top-side heat spreading: exposed copper pours and filled thermal vias under a 60 x 44 x 44 mm finned heatsink
+  (mounted on electrically insulating thermal tape), plus a 12 x 12 x 5 mm heatsink on the regulator
+- 65.1 x 112.1 mm, 4-layer, 2 oz outer copper, ENIG, filled and capped via-in-pad
 
-The Bitaxe Gamma Turbo is the first iteration of a dual ASIC chip variant and marks the first point of multi-chip devices with modern ASIC hardware.
+Firmware: [kuenrg153/ESP-Miner](https://github.com/kuenrg153/ESP-Miner), the ESP-Miner fork for the KF1950.
 
-## Contributing
+## Repository layout
 
-We welcome contributions to the Bitaxe Gamma Turbo project! To contribute, follow these steps:
+| Path | Contents |
+|---|---|
+| `BitaxeNini_V1.0.kicad_pro` / `.kicad_sch` / `.kicad_pcb` | KiCad project, schematics (ASIC, Power, ESP32, fan sheets) and board |
+| `bitaxe.kicad_sym`, `bitaxe.pretty/`, `3d/` | Project library: symbols, footprints and 3D models (bundled, no external library needed) |
+| `Manufacturing Files/` | Gerbers, drill files, BOM with DigiKey part numbers, pick-and-place, fab and assembly drawings, `FAB_NOTES.txt` |
+| `BitaxeNini_V1.0.step` | Full 3D assembly model |
+| `doc/` | Renders |
 
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. Make your changes and commit them:
-   ```bash
-   git commit -m "Add your commit message here"
-   ```
-4. Push your changes to your fork:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-5. Create a pull request on the main repository.
+The project library is referenced through `${KIPRJMOD}`, so the project opens with all footprints and 3D models
+straight after cloning.
+
+## Manufacturing
+
+Upload `Manufacturing Files/BitaxeNini_V1.0_MFG_261117.zip` to the board house and include the notes in
+`Manufacturing Files/FAB_NOTES.txt`. Key requirements: via-in-pad filled and capped (IPC-4761 Type VII) and the
+intentional front solder-mask openings. The KF1950 ASICs are not sold by distributors and are supplied separately.
 
 ## License
 
-This project is licensed under the CERN-OHL-2-S License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the CERN-OHL-S-2.0 licence. See [LICENSE](LICENSE).
 
 ## Acknowledgments
 
-We would like to acknowledge the following projects and individuals for their contributions to the Bitaxe Gamma Turbo:
-
-- [esp-miner](https://github.com/bitaxeorg/esp-miner) for the mining firmware.
-- The open-source community for their support and contributions.
+- [bitaxeorg/BitaxeGT](https://github.com/bitaxeorg/BitaxeGT), the design this board is derived from
+- [esp-miner](https://github.com/bitaxeorg/esp-miner) and the Bitaxe open-source community
+- The OLED footprint reference: [MichMich/KiCad-SSD1306_OLED-0.91-128x32](https://github.com/MichMich/KiCad-SSD1306_OLED-0.91-128x32)

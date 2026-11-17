@@ -119,7 +119,7 @@
     ) (tstamp 72ad24b5-ba5a-4997-8bd3-9ed2719df687))
   (pad "11" thru_hole circle (at 0 0.95) (size 0.4 0.4) (drill 0.3) (layers "*.Cu" "*.Mask") (tstamp c7449b98-c5b7-4dfe-af9e-9a634355b616))
   (pad "11" thru_hole circle (at 0.575 0) (size 0.4 0.4) (drill 0.3) (layers "*.Cu" "*.Mask") (tstamp f28df857-5c64-46f3-afa3-04ffe4190fab))
-  (model "${KIPRJMOD}/3D/DRC0010J.stp"
+  (model "${KIPRJMOD}/3d/DRC0010J.stp"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
