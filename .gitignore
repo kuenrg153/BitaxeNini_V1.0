@@ -45,3 +45,6 @@ fp-info-cache
 .history/
 _restore_backup_*/
 WebBench/
+
+# Local archives
+*.7z
