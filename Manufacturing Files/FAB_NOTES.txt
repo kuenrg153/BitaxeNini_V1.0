@@ -1,12 +1,12 @@
-BitaxeNini V1.0 - PCB FABRICATION AND ASSEMBLY NOTES
+BitaxeNini V2.0 - PCB FABRICATION AND ASSEMBLY NOTES
 ====================================================
-Generated 2026-11-17 from BitaxeNini_V1.0.kicad_pcb (KiCad 10.0.7).
+Generated 2026-11-19 from BitaxeNini_V2.0.kicad_pcb (KiCad 10.0.7).
 If anything in the Gerber job file or drawings conflicts with these notes, these notes take precedence.
 
 
 1. PCB FABRICATION
 ------------------
-Board size          65.1 x 112.1 mm (outline: BitaxeNini_V1.0-Edge_Cuts.gm1)
+Board size          65.1 x 112.1 mm (outline: BitaxeNini_V2.0-Edge_Cuts.gm1)
 Layers              4
 Thickness           1.6 mm finished, FR-4, high-Tg (Tg >= 170 C recommended - high-current, hot board)
 Copper              2 oz (70 um) OUTER layers (F.Cu, B.Cu), 1 oz (35 um) INNER layers (In1.Cu, In2.Cu)
@@ -17,8 +17,8 @@ Solder mask         Both sides, green (or any colour), LPI
 Silkscreen          Both sides, white
 Min track / space   0.20 mm / 0.20 mm
 Min drill           0.30 mm (vias 0.3 mm drill / 0.6 mm pad, some 0.5 mm pad)
-Plated holes        936 (see BitaxeNini_V1.0-PTH.drl, includes 4 plated slots)
-Non-plated holes    7 (see BitaxeNini_V1.0-NPTH.drl - 2 x 3.2 mm are heatsink mounting holes)
+Plated holes        936 (see BitaxeNini_V2.0-PTH.drl, includes 4 plated slots)
+Non-plated holes    7 (see BitaxeNini_V2.0-NPTH.drl - 2 x 3.2 mm are heatsink mounting holes)
 Drill files         Excellon, metric, absolute origin, separate PTH / NPTH; drill maps included (PDF)
 Castellations / V-score / impedance: none
 
@@ -51,8 +51,8 @@ Castellations / V-score / impedance: none
 - Double-sided SMT. TOP: TPS546 (U2), power stage, input/output capacitors, U1, J5.
   BOTTOM: the four KF1950 ASICs (U8-U11), ESP32-S3 module (U4), support parts.
 - Through-hole: J1 (terminal block), J7, J8 (4-pin headers).
-- BOM: BitaxeNini_V1.0_BOM.csv (manufacturer and DigiKey part numbers).
-  Placement: BitaxeNini_V1.0-all-pos.csv (mm, KiCad origin, both sides; DNP parts excluded).
+- BOM: BitaxeNini_V2.0_BOM.csv (manufacturer and DigiKey part numbers).
+  Placement: BitaxeNini_V2.0-all-pos.csv (mm, KiCad origin, both sides; DNP parts excluded).
 - KF1950 ASICs (U8-U11) are customer supplied (consigned) - not available from distributors.
 - Do Not Populate: R12, R38, R43, R46, C14, C50 (alternate / option positions) and all test points.
 - Test points (0.9V1, CLK2, CTSI1, RST_OUT1, RXD_OUT1, TPx, CLK1, RST_DET1) are bare pads - no part.
@@ -74,16 +74,16 @@ Castellations / V-score / impedance: none
 
 7. FILE LIST
 ------------
-gerbers/BitaxeNini_V1.0-F_Cu.gtl, -In1_Cu.g1, -In2_Cu.g2, -B_Cu.gbl         copper
-gerbers/BitaxeNini_V1.0-F_Mask.gts, -B_Mask.gbs                               solder mask
-gerbers/BitaxeNini_V1.0-F_Silkscreen.gto, -B_Silkscreen.gbo                   legend
-gerbers/BitaxeNini_V1.0-F_Paste.gtp, -B_Paste.gbp                             paste (stencil)
-gerbers/BitaxeNini_V1.0-Edge_Cuts.gm1                                         outline
-gerbers/BitaxeNini_V1.0-PTH.drl, -NPTH.drl (+ drill map PDFs, drill report)   drills
-gerbers/BitaxeNini_V1.0-job.gbrjob                                            Gerber X2 job file
-BitaxeNini_V1.0_MFG_261117.zip                                                gerbers + drills (upload this)
-BitaxeNini_V1.0_BOM.csv                                                       BOM
-BitaxeNini_V1.0-all-pos.csv, gerbers/BitaxeNini_V1.0-all.pos                  pick and place
-BitaxeNini_V1.0-fab_drawing.pdf                                               outline, fab note, front mask
-BitaxeNini_V1.0-assembly_top.pdf / _bottom.pdf                                assembly drawings
+gerbers/BitaxeNini_V2.0-F_Cu.gtl, -In1_Cu.g1, -In2_Cu.g2, -B_Cu.gbl         copper
+gerbers/BitaxeNini_V2.0-F_Mask.gts, -B_Mask.gbs                               solder mask
+gerbers/BitaxeNini_V2.0-F_Silkscreen.gto, -B_Silkscreen.gbo                   legend
+gerbers/BitaxeNini_V2.0-F_Paste.gtp, -B_Paste.gbp                             paste (stencil)
+gerbers/BitaxeNini_V2.0-Edge_Cuts.gm1                                         outline
+gerbers/BitaxeNini_V2.0-PTH.drl, -NPTH.drl (+ drill map PDFs, drill report)   drills
+gerbers/BitaxeNini_V2.0-job.gbrjob                                            Gerber X2 job file
+BitaxeNini_V2.0_MFG_261119.zip                                                gerbers + drills (upload this)
+BitaxeNini_V2.0_BOM.csv                                                       BOM
+BitaxeNini_V2.0-all-pos.csv, gerbers/BitaxeNini_V2.0-all.pos                  pick and place
+BitaxeNini_V2.0-fab_drawing.pdf                                               outline, fab note, front mask
+BitaxeNini_V2.0-assembly_top.pdf / _bottom.pdf                                assembly drawings
 FAB_NOTES.txt                                                                 this file

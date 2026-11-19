@@ -1,6 +1,6 @@
 (version 1)
 
-# --- BitaxeNini V1.0 custom rules -------------------------------------------
+# --- BitaxeNini V2.0 custom rules -------------------------------------------
 # Net classes (in the .kicad_pro) set widths/vias; these rules add the extras.
 
 # 1.2 V stack: each stack net is a different 0.3 V domain. Pours/tracks of one

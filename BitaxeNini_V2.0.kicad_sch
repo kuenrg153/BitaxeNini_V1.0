@@ -2394,7 +2394,7 @@
 			(uuid "fbc22fd8-f611-49d8-9311-0a009fc47cad")
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(reference "H2")
 					(unit 1)
@@ -2470,7 +2470,7 @@
 			)
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(reference "HS1")
 					(unit 1)
@@ -2582,7 +2582,7 @@
 			(uuid "d56f3d63-7d86-4608-869b-de19a91af64c")
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(reference "J1")
 					(unit 1)
@@ -2672,7 +2672,7 @@
 			(uuid "9e1667e8-6bd5-47cb-bc34-6d796de5e393")
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(reference "H4")
 					(unit 1)
@@ -2780,7 +2780,7 @@
 			(uuid "e62860d4-c7f2-478f-a1cf-f8ac2035db7b")
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(reference "R87")
 					(unit 1)
@@ -2870,7 +2870,7 @@
 			(uuid "5cbc2d8d-5c9f-444f-aa3a-5fe2f8a2e581")
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(reference "H3")
 					(unit 1)
@@ -2994,7 +2994,7 @@
 			(uuid "a9f18743-7a26-4363-a624-0e031b32eb58")
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(reference "U17")
 					(unit 1)
@@ -3070,7 +3070,7 @@
 			)
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(reference "FID2")
 					(unit 1)
@@ -3184,7 +3184,7 @@
 			(uuid "eb1b46e1-f8f8-47cb-86eb-3df97ded2796")
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(reference "C95")
 					(unit 1)
@@ -3274,7 +3274,7 @@
 			(uuid "80644af7-9b1b-4339-ba2d-44c98807606d")
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(reference "H1")
 					(unit 1)
@@ -3350,7 +3350,7 @@
 			)
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(reference "FID1")
 					(unit 1)
@@ -3426,7 +3426,7 @@
 			)
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(reference "FID3")
 					(unit 1)
@@ -3536,7 +3536,7 @@
 			(uuid "117eb3ff-357e-4802-b515-b0c9f4c4908b")
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(reference "J9")
 					(unit 1)
@@ -3703,7 +3703,7 @@
 			)
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(page "3")
 				)
@@ -3829,7 +3829,7 @@
 			)
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(page "2")
 				)
@@ -3935,7 +3935,7 @@
 			)
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(page "4")
 				)
@@ -4031,7 +4031,7 @@
 			)
 		)
 		(instances
-			(project "BitaxeNini_V1.0"
+			(project "BitaxeNini_V2.0"
 				(path "/61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
 					(page "5")
 				)

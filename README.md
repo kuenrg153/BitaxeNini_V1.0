@@ -1,4 +1,4 @@
-# Bitaxe Nini V1.0
+# Bitaxe Nini V2.0
 
 Bitaxe Nini is an open-source Bitcoin miner board with **four KF1950 ASICs**. It is a derivative of the
 [Bitaxe Gamma Turbo (BitaxeGT)](https://github.com/bitaxeorg/BitaxeGT) and is designed in KiCad 10.
@@ -23,10 +23,10 @@ Firmware: [kuenrg153/ESP-Miner](https://github.com/kuenrg153/ESP-Miner), the ESP
 
 | Path | Contents |
 |---|---|
-| `BitaxeNini_V1.0.kicad_pro` / `.kicad_sch` / `.kicad_pcb` | KiCad project, schematics (ASIC, Power, ESP32, fan sheets) and board |
+| `BitaxeNini_V2.0.kicad_pro` / `.kicad_sch` / `.kicad_pcb` | KiCad project, schematics (ASIC, Power, ESP32, fan sheets) and board |
 | `bitaxe.kicad_sym`, `bitaxe.pretty/`, `3d/` | Project library: symbols, footprints and 3D models (bundled, no external library needed) |
 | `Manufacturing Files/` | Gerbers, drill files, BOM with DigiKey part numbers, pick-and-place, fab and assembly drawings, `FAB_NOTES.txt` |
-| `BitaxeNini_V1.0.step` | Full 3D assembly model |
+| `BitaxeNini_V2.0.step` | Full 3D assembly model |
 | `doc/` | Renders |
 
 The project library is referenced through `${KIPRJMOD}`, so the project opens with all footprints and 3D models
@@ -34,7 +34,7 @@ straight after cloning.
 
 ## Manufacturing
 
-Upload `Manufacturing Files/BitaxeNini_V1.0_MFG_261117.zip` to the board house and include the notes in
+Upload `Manufacturing Files/BitaxeNini_V2.0_MFG_261119.zip` to the board house and include the notes in
 `Manufacturing Files/FAB_NOTES.txt`. Key requirements: via-in-pad filled and capped (IPC-4761 Type VII) and the
 intentional front solder-mask openings. The KF1950 ASICs are not sold by distributors and are supplied separately.
 

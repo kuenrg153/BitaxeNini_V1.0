@@ -1,4 +1,4 @@
-### Footprint positions - created on 2026-11-17T16:37:23 ###
+### Footprint positions - created on 2026-11-19T09:00:50 ###
 ### Printed by KiCad version 10.0.7
 ## Unit = mm, Angle = deg.
 ## Side : All
@@ -152,6 +152,7 @@ H1        MountingHole_Pad         MountingHole_3.2mm_M3_Pad_Via                
 H2        MountingHole_Pad         MountingHole_3.2mm_M3_Pad_Via                              102.0000   -41.5000    0.0000  top
 H3        MountingHole_Pad         MountingHole_3.2mm_M3_Pad_Via                              160.0000  -146.5000    0.0000  top
 H4        MountingHole_Pad         MountingHole_3.2mm_M3_Pad_Via                              102.0000  -146.5000    0.0000  top
+HS1       Heatsink                 Heatsink-2hole-68mm                                        131.0000  -118.5000    0.0000  top
 J3        TC2030-IDC               Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical            109.5000   -70.0000    0.0000  top
 J5        Conn_01x08               FPC-SMD_P0.50-8P_FGS-XJ-H2.0                               103.5000   -85.0000   90.0000  top
 J7        Conn_01x04               PinHeader_1x04_P2.54mm_Vertical                            125.5000  -147.5000  -90.0000  top

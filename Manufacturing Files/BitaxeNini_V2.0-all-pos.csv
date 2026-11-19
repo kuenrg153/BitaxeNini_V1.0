@@ -148,6 +148,7 @@ Ref,Val,Package,PosX,PosY,Rot,Side
 "H2","MountingHole_Pad","MountingHole_3.2mm_M3_Pad_Via",102.000000,-41.500000,0.000000,top
 "H3","MountingHole_Pad","MountingHole_3.2mm_M3_Pad_Via",160.000000,-146.500000,0.000000,top
 "H4","MountingHole_Pad","MountingHole_3.2mm_M3_Pad_Via",102.000000,-146.500000,0.000000,top
+"HS1","Heatsink","Heatsink-2hole-68mm",131.000000,-118.500000,0.000000,top
 "J3","TC2030-IDC","Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical",109.500000,-70.000000,0.000000,top
 "J5","Conn_01x08","FPC-SMD_P0.50-8P_FGS-XJ-H2.0",103.500000,-85.000000,90.000000,top
 "J7","Conn_01x04","PinHeader_1x04_P2.54mm_Vertical",125.500000,-147.500000,-90.000000,top

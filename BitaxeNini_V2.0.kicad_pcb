@@ -9,8 +9,8 @@
 	(paper "A4")
 	(title_block
 		(title "BitaxeNini")
-		(date "2026-11-17")
-		(rev "V1.0")
+		(date "2026-11-19")
+		(rev "V2.0")
 		(comment 1 "4L 1.6 mm, 2/1/1/2 oz, ENIG, filled via-in-pad - see FAB_NOTES")
 	)
 	(layers
@@ -5133,7 +5133,7 @@
 		(property ki_fp_filters "R_*Shunt*")
 		(path "/3d9999fe-1865-4c4e-aee2-3945a1d90182")
 		(sheetname "/")
-		(sheetfile "BitaxeNini_V1.0.kicad_sch")
+		(sheetfile "BitaxeNini_V2.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6627,7 +6627,7 @@
 		(property ki_fp_filters "Fiducial*")
 		(path "/cb54600b-2c93-474f-822b-7bb587446d0c")
 		(sheetname "/")
-		(sheetfile "BitaxeNini_V1.0.kicad_sch")
+		(sheetfile "BitaxeNini_V2.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7229,7 +7229,7 @@
 		(property ki_fp_filters "Heatsink_*")
 		(path "/1b689995-7c98-4d53-90e0-5cfdabf79b83")
 		(sheetname "/")
-		(sheetfile "BitaxeNini_V1.0.kicad_sch")
+		(sheetfile "BitaxeNini_V2.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8351,7 +8351,7 @@
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/24054009-b6b2-4eb2-9a19-7fb2369996dd")
 		(sheetname "/")
-		(sheetfile "BitaxeNini_V1.0.kicad_sch")
+		(sheetfile "BitaxeNini_V2.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -11763,7 +11763,7 @@
 		)
 		(path "/5e2cf679-7b2a-4eea-b3df-02465827042e")
 		(sheetname "/")
-		(sheetfile "BitaxeNini_V1.0.kicad_sch")
+		(sheetfile "BitaxeNini_V2.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -14320,7 +14320,7 @@
 		(property ki_fp_filters "Fiducial*")
 		(path "/b91bfcc4-c4da-404b-8879-bad81dc0d2b2")
 		(sheetname "/")
-		(sheetfile "BitaxeNini_V1.0.kicad_sch")
+		(sheetfile "BitaxeNini_V2.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -15297,7 +15297,7 @@
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/1626d1cb-ff0c-41e7-ad29-494f89fc2632")
 		(sheetname "/")
-		(sheetfile "BitaxeNini_V1.0.kicad_sch")
+		(sheetfile "BitaxeNini_V2.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -15518,7 +15518,7 @@
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/559fe550-3979-49dc-a66d-262f501e565f")
 		(sheetname "/")
-		(sheetfile "BitaxeNini_V1.0.kicad_sch")
+		(sheetfile "BitaxeNini_V2.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -19025,7 +19025,7 @@
 		(property ki_fp_filters "Fiducial*")
 		(path "/6b5e4188-1e9d-4ba5-a145-a6a81e6d7127")
 		(sheetname "/")
-		(sheetfile "BitaxeNini_V1.0.kicad_sch")
+		(sheetfile "BitaxeNini_V2.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -20095,7 +20095,7 @@
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/af4a3f97-37ad-4a2d-a684-e2f939dfc1da")
 		(sheetname "/")
-		(sheetfile "BitaxeNini_V1.0.kicad_sch")
+		(sheetfile "BitaxeNini_V2.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -22043,7 +22043,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/9ad4a153-7e56-458c-8653-60ddfc6330c8")
 		(sheetname "/")
-		(sheetfile "BitaxeNini_V1.0.kicad_sch")
+		(sheetfile "BitaxeNini_V2.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -33645,7 +33645,7 @@
 		(property ki_fp_filters "TerminalBlock*:*")
 		(path "/1fb81080-b199-42bb-8517-30ff7f364f20")
 		(sheetname "/")
-		(sheetfile "BitaxeNini_V1.0.kicad_sch")
+		(sheetfile "BitaxeNini_V2.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -48019,7 +48019,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/cfbe0845-c943-4373-82e2-66fa318fa8dd")
 		(sheetname "/")
-		(sheetfile "BitaxeNini_V1.0.kicad_sch")
+		(sheetfile "BitaxeNini_V2.0.kicad_sch")
 		(units
 			(unit
 				(name "A")

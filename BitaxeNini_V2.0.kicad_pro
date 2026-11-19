@@ -535,7 +535,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "BitaxeNini_V1.0.kicad_pro",
+    "filename": "BitaxeNini_V2.0.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -842,7 +842,7 @@
       "plot": "Manufacturing Files/gerbers/",
       "pos_files": "../PnP/800x",
       "specctra_dsn": "",
-      "step": "BitaxeNini_V1.0.step",
+      "step": "BitaxeNini_V2.0.step",
       "svg": "",
       "vrml": ""
     },
@@ -999,8 +999,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "BitaxeNini_V1.0.kicad_sch",
-        "name": "BitaxeNini_V1.0",
+        "filename": "BitaxeNini_V2.0.kicad_sch",
+        "name": "BitaxeNini_V2.0",
         "uuid": "61fe8d2c-9301-4ad9-8caf-c47acfa835b0"
       }
     ],
@@ -1010,7 +1010,7 @@
   "sheets": [
     [
       "61fe8d2c-9301-4ad9-8caf-c47acfa835b0",
-      "BitaxeNini_V1.0"
+      "BitaxeNini_V2.0"
     ],
     [
       "24036843-8461-4d4b-b738-f953c909ed6c",
